@@ -1,4 +1,4 @@
-# vyaapaar
+# vyaapaar ( व्यापार )
 Open-Source Trading Platform for everyone.
 
 मुद्रा - ∅,
