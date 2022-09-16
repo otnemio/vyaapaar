@@ -1,0 +1,9 @@
+[package]
+name = "vyaapaar"
+version = "0.1.0"
+edition = "2022"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+gtk = { git = "https://github.com/gtk-rs/gtk4-rs.git", package = "gtk4" }

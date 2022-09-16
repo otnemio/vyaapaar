@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.6"/>
+  <object class="GtkApplicationWindow" id ="window">
+    <property name="default-width">800</property>
+    <property name="default-height">600</property>
+    <property name="title">अपना व्यापार</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkStackSwitcher">
+            <property name="stack">stack1</property>
+            <property name="margin-start">8</property>
+            <property name="margin-end">8</property>
+            <property name="margin-top">8</property>
+            <property name="margin-bottom">8</property>
+            <property name="halign">start</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkStack" id="stack1">
+            <property name="vexpand">1</property>
+            <property name="margin-start">8</property>
+            <property name="margin-end">8</property>
+            <property name="margin-top">8</property>
+            <property name="margin-bottom">8</property>
+            <child>
+              <object class="GtkStackPage">
+                <property name="name">page0</property>
+                <property name="title" translatable="1">Instruments</property>
+                <property name="child">
+                  <object class="GtkBox">
+                    <child>
+                      <object class="GtkScrolledWindow">
+                        <property name="width-request">160</property>
+                        <property name="focusable">1</property>
+                        <property name="child">
+                          <object class="GtkViewport">
+                            <property name="child">
+                              <object class="GtkListBox" id="listboxIns">
+                                <child>
+                                  <object class="GtkButton" id="relianceBtn">
+                                    <property name="label">RELIANCE</property>
+                                    <!-- <property name="action-name">win.updateTitle</property>
+                                    <property name="action-target">1000</property> -->
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkButton" id="belBtn">
+                                    <property name="label">BEL</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkButton" id="adanigreenBtn">
+                                    <property name="label">ADANIGREEN</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </property>
+                          </object>
+                        </property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkScrolledWindow">
+                        <property name="hexpand">1</property>
+                        <property name="focusable">1</property>
+                        <property name="child">
+                          <object class="GtkViewport">
+                            <property name="child">
+                              <object class="GtkBox">
+                              <property name="orientation">vertical</property>
+                                <child>
+                                  <object class="GtkLabel" id ="insTitle">
+                                    <property name="label">Hello World</property>
+                                    <property name="halign">start</property>
+                                      <attributes> 
+                                        <attribute name ="size" value="32768" />
+                                        <!-- <attribute name="weight" value="PANGO_WEIGHT_BOLD"/> -->
+                                      </attributes> 
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkEntry">
+                                  </object>
+                                </child>
+                              
+                              </object>
+                            </property>
+                          </object>
+                        </property>
+                      </object>
+                    </child>
+                  </object>
+                </property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkStackPage">
+                <property name="name">page1</property>
+                <property name="title" translatable="1">Orders</property>
+                <property name="child">
+                  <object class="GtkFixed"/>
+                </property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkStackPage">
+                <property name="name">page2</property>
+                <property name="title" translatable="1">Users</property>
+                <property name="child">
+                  <object class="GtkFixed"/>
+                </property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkStackPage">
+                <property name="name">page3</property>
+                <property name="title" translatable="1">Settings</property>
+                <property name="child">
+                  <object class="GtkFixed"/>
+                </property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkStatusbar">
+            <property name="margin-start">10</property>
+            <property name="margin-end">10</property>
+            <property name="margin-top">6</property>
+            <property name="margin-bottom">6</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
