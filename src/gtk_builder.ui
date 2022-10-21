@@ -40,19 +40,19 @@
                             <property name="child">
                               <object class="GtkListBox" id="listboxIns">
                                 <child>
-                                  <object class="GtkButton" id="relianceBtn">
+                                  <object class="GtkToggleButton" id="relianceBtn">
                                     <property name="label">RELIANCE</property>
                                     <!-- <property name="action-name">win.updateTitle</property>
                                     <property name="action-target">1000</property> -->
                                   </object>
                                 </child>
                                 <child>
-                                  <object class="GtkButton" id="belBtn">
+                                  <object class="GtkToggleButton" id="belBtn">
                                     <property name="label">BEL</property>
                                   </object>
                                 </child>
                                 <child>
-                                  <object class="GtkButton" id="adanigreenBtn">
+                                  <object class="GtkToggleButton" id="adanigreenBtn">
                                     <property name="label">ADANIGREEN</property>
                                   </object>
                                 </child>
@@ -73,16 +73,17 @@
                               <property name="orientation">vertical</property>
                                 <child>
                                   <object class="GtkLabel" id ="insTitle">
-                                    <property name="label">Hello World</property>
+                                    <property name="label">Welcome to अपना व्यापार</property>
                                     <property name="halign">start</property>
                                       <attributes> 
                                         <attribute name ="size" value="32768" />
-                                        <!-- <attribute name="weight" value="PANGO_WEIGHT_BOLD"/> -->
                                       </attributes> 
                                   </object>
                                 </child>
                                 <child>
-                                  <object class="GtkEntry">
+                                  <object class="GtkLabel" id ="insDesc">
+                                    <property name="label">You'll be able to trade using this application if everything goes according to plan.</property>
+                                    <property name="halign">start</property>
                                   </object>
                                 </child>
                               
