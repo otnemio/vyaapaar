@@ -26,7 +26,7 @@
         </child>
         <child>
           <object class="GtkLabel">
-          <property name="width-request">640</property>
+          <property name="width-request">480</property>
           <property name="label">॥ श्री गणेशाय नमः ॥</property>
           <property name="wrap">True</property>
             <layout>
