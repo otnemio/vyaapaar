@@ -12,3 +12,5 @@ Open-Source Trading Platform for everyone.
 
 Error resolutions:
 https://askubuntu.com/questions/281984/how-install-gio-unix-2-28-0
+
+Code will be written in easy to understand manner.
